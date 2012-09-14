@@ -118,6 +118,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
+  haml-rails
   hashrocket_ui!
   jquery-rails
   pg
