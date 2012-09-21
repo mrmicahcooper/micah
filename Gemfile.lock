@@ -1,11 +1,3 @@
-GIT
-  remote: https://github.com/hashrocket/hashrocket_ui.git
-  revision: 13431f03dd78cbfadfe9cf61375777a4fdf1d2bb
-  specs:
-    hashrocket_ui (0.0.1)
-      haml-rails
-      railties
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -119,7 +111,6 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
   haml-rails
-  hashrocket_ui!
   jquery-rails
   pg
   rails (= 3.2.8)
