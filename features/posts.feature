@@ -1,4 +1,5 @@
 Feature: Posts
+
   Scenario: Visitor views a published posts
     Given the following post:
       | body    | This is the body of a post. You bette read it |
@@ -15,3 +16,11 @@ Feature: Posts
     And I follow "Blog"
     Then I should not see "This is the body of a post. You bette read it"
 
+@javascript
+  Scenario: Admin adds post
+    Given I am signed in
+    When I follow "+ add post"
+    And I fill in "body" with "this is a post"
+    And I check "publish?"
+    And I press "add post"
+    Then I should see "this is a post"
