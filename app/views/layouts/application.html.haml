@@ -3,7 +3,7 @@
   %head
     %title mrmicahcooper
     = stylesheet_link_tag 'application'
-    = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Karla:400,700'
+    = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Karla:400,700|Duru+Sans'
     = javascript_include_tag 'application'
     = yield :stylesheet
   %body
@@ -29,7 +29,6 @@
           = link_to "Twitter", "http://twitter.com/mrmicahcooper", class: "twitter"
           = link_to "Github", "http://github.com/mrmicahcooper", class: "github"
         %nav
-          = link_to "Photos", "#"
           = link_to "Blog", :blog
     %section
       = yield
