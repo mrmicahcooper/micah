@@ -10,4 +10,6 @@ Micah::Application.routes.draw do
 
   resources :posts
 
+  get '/heartbeat', to: proc { [200, {}, ''.chars] }
+
 end
