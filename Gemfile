@@ -5,10 +5,12 @@ gem 'carrierwave'
 gem 'decent_exposure', '~> 2.0.0.rc1'
 gem 'haml-rails'
 gem 'jquery-rails'
+gem 'nokogiri'
 gem 'picasa'
 gem 'pg'
+gem 'pygmentize'
 gem 'rails', '3.2.8'
-gem 'rdiscount'
+gem 'redcarpet'
 
 group :production do
   gem 'newrelic_rpm'
