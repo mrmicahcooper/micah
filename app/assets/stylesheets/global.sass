@@ -27,6 +27,7 @@ body
       a
         border-right: solid 2px $light_gray
         padding: 3px 10px 3px 5px
+        &.active
         &:hover
           color: $blue
         &:last-child
@@ -70,8 +71,11 @@ body
       a
         font: normal bold 18px $sans
         margin-right: 15px
+        padding-bottom: 6px
         &:hover
           color: $blue
+        &.active
+          border-bottom: solid $green 2px
       clear: left
   section
     position: absolute
