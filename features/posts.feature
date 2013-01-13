@@ -2,7 +2,7 @@ Feature: Posts
 
   Scenario: Visitor views a published posts
     Given the following post:
-      | body    | This is the body of a post. You bette read it |
+      | body      | This is the body of a post. You bette read it |
       | published | true                                          |
     When I am on the home page
     And I follow "Blog"
@@ -20,7 +20,7 @@ Feature: Posts
 
   Scenario: Admin edits post, then deletes it
     Given the following post:
-      | body    | This is the body of a post. You bette read it |
+      | body      | This is the body of a post. You bette read it |
       | published | true                                          |
     And I am signed in
     And I follow "Blog"
@@ -34,7 +34,7 @@ Feature: Posts
 
   Scenario: Visitor doesn't see unpublished posts
     Given the following post:
-      | body    | This is the body of a post. You bette read it |
+      | body      | This is the body of a post. You bette read it |
       | published | false                                         |
     When I am on the home page
     And I follow "Blog"
