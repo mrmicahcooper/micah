@@ -9,7 +9,7 @@ gem 'nokogiri'
 gem 'picasa'
 gem 'pg'
 gem 'pygmentize'
-gem 'rails', '3.2.8'
+gem 'rails'
 gem 'redcarpet'
 
 group :production do
