@@ -109,7 +109,7 @@ GEM
     multi_json (1.7.2)
     multi_xml (0.5.1)
     netrc (0.7.7)
-    newrelic_rpm (3.4.2.1)
+    newrelic_rpm (3.6.1.88)
     nokogiri (1.5.5)
     pg (0.14.1)
     picasa (0.5.4)
