@@ -1,3 +1,4 @@
+ruby '2.0.0'
 source 'https://rubygems.org'
 
 gem 'authem', :git => 'git://github.com/paulelliott/authem.git'
