@@ -1,10 +1,10 @@
-ruby '2.0.0'
+ruby '2.1.1'
 
 source 'https://rubygems.org'
 
-gem 'authem', :git => 'git://github.com/paulelliott/authem.git'
+gem 'authem'
 gem 'carrierwave'
-gem 'decent_exposure', '~> 2.0.0.rc1'
+gem 'decent_exposure'
 gem 'haml-rails'
 gem 'jquery-rails'
 gem 'nokogiri'
@@ -19,19 +19,17 @@ group :production do
 end
 
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'uglifier', '>= 1.0.3'
+  gem 'sass-rails'
+  gem 'uglifier'
 end
 
 group :development, :test do
-  gem 'heroku'
   gem 'fabrication'
-  gem 'pry'
-  gem 'therubyracer'
+  gem 'pry-rails'
 end
 
 group :test do
-  gem 'cucumber-rails'
+  gem 'cucumber-rails', require: false
   gem 'database_cleaner'
   gem 'dirty'
   gem 'launchy'

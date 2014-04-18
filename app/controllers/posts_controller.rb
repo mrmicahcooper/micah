@@ -4,7 +4,7 @@ class PostsController < ApplicationController
 
   expose(:posts)
   expose(:published_posts) { Post.published }
-  expose(:post, finder: :find_by_slug_or_id)
+  expose(:post, finder: :find_by_slug_or_id, attributes: :post_attributes)
 
   def index
     @posts = signed_in? ? posts : published_posts
@@ -29,6 +29,16 @@ class PostsController < ApplicationController
   def destroy
     post.destroy
     redirect_to :blog_home
+  end
+
+  private
+
+  def post_attributes
+    params.require(:post).permit(
+      :published,
+      :body,
+      :title
+    )
   end
 
 end

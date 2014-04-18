@@ -1,6 +1,6 @@
 = content_for :stylesheet do
   = stylesheet_link_tag :home
-= form_tag :sign_in, method: :post do
+= form_tag :create_session, method: :post do
   %fieldset
     %dl
       %dt= label_tag :email
