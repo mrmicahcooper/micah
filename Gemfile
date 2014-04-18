@@ -13,20 +13,14 @@ gem 'pg'
 gem 'pygmentize'
 gem 'rails'
 gem 'redcarpet'
-gem 'rails_12factor'
-
-group :assets do
-  gem 'sass-rails'
-  gem 'uglifier'
-end
+gem 'rails_12factor', group: :production
+gem 'sass-rails'
+gem 'uglifier'
 
 group :development, :test do
   gem 'fabrication'
   gem 'pry-rails'
   gem 'paratrooper'
-end
-
-group :test do
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
   gem 'dirty'
