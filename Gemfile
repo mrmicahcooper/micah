@@ -15,10 +15,6 @@ gem 'rails'
 gem 'redcarpet'
 gem 'rails_12factor'
 
-group :production do
-  gem 'newrelic_rpm'
-end
-
 group :assets do
   gem 'sass-rails'
   gem 'uglifier'
