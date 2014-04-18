@@ -16,6 +16,7 @@ gem 'redcarpet'
 gem 'rails_12factor', group: :production
 gem 'sass-rails'
 gem 'uglifier'
+gem 'puma'
 
 group :development, :test do
   gem 'fabrication'
