@@ -13,6 +13,7 @@ gem 'pg'
 gem 'pygmentize'
 gem 'rails'
 gem 'redcarpet'
+gem 'rails_12factor'
 
 group :production do
   gem 'newrelic_rpm'
