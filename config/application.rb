@@ -12,18 +12,13 @@ end
 module Micah
   class Application < Rails::Application
     config.encoding = "utf-8"
-
     config.filter_parameters += [:password]
-
     config.active_support.escape_html_entities_in_json = true
-
     config.assets.enabled = true
-
     config.assets.compile = true
-
     config.assets.version = '1.0'
-
     config.eager_load = true
+    config.serve_static_assets = true
 
     config.generators do |g|
       g.test_framework :rspec, fixture: true, views: false
