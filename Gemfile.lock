@@ -62,6 +62,7 @@ GEM
     diff-lcs (1.2.5)
     dirty (0.0.7)
     erubis (2.7.0)
+    excon (0.33.0)
     execjs (2.0.2)
     fabrication (2.11.1)
     gherkin (2.12.2)
@@ -73,6 +74,9 @@ GEM
       activesupport (>= 4.0.1)
       haml (>= 3.1, < 5.0)
       railties (>= 4.0.1)
+    heroku-api (0.3.18)
+      excon (~> 0.27)
+      multi_json (~> 1.8)
     hike (1.2.3)
     httparty (0.13.1)
       json (~> 1.8)
@@ -94,8 +98,14 @@ GEM
     multi_json (1.9.2)
     multi_test (0.1.1)
     multi_xml (0.5.5)
+    netrc (0.7.7)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
+    paratrooper (2.4.0)
+      excon
+      heroku-api (~> 0.3)
+      netrc (~> 0.7)
+      rendezvous (~> 0.0.1)
     pg (0.17.1)
     picasa (0.7.2)
       httparty
@@ -132,6 +142,7 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rake (10.3.1)
     redcarpet (3.1.1)
+    rendezvous (0.0.2)
     rspec-core (2.14.8)
     rspec-expectations (2.14.5)
       diff-lcs (>= 1.1.3, < 2.0)
@@ -189,6 +200,7 @@ DEPENDENCIES
   jquery-rails
   launchy
   nokogiri
+  paratrooper
   pg
   picasa
   pry-rails

@@ -23,6 +23,7 @@ end
 group :development, :test do
   gem 'fabrication'
   gem 'pry-rails'
+  gem 'paratrooper'
 end
 
 group :test do
