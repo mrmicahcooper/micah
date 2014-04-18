@@ -33,6 +33,9 @@ GEM
       activesupport
       bcrypt-ruby
     bcrypt-ruby (3.1.2)
+    bourbon (3.1.8)
+      sass (>= 3.2.0)
+      thor
     builder (3.2.2)
     capybara (2.2.1)
       mime-types (>= 1.16)
@@ -164,6 +167,7 @@ GEM
       sprockets (~> 2.8, <= 2.11.0)
       sprockets-rails (~> 2.0)
     slop (3.5.0)
+    spicerack-rails (0.0.3)
     sprockets (2.11.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -192,6 +196,7 @@ PLATFORMS
 
 DEPENDENCIES
   authem
+  bourbon
   carrierwave
   cucumber-rails
   database_cleaner
@@ -213,4 +218,5 @@ DEPENDENCIES
   redcarpet
   rspec-rails
   sass-rails
+  spicerack-rails
   uglifier

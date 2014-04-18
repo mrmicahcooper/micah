@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 ruby '2.1.1'
 
 gem 'authem'
+gem 'bourbon'
 gem 'carrierwave'
 gem 'decent_exposure'
 gem 'haml-rails'
