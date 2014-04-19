@@ -1,36 +1,92 @@
-@import 'mixins'
-$green: #229b2e
+@import 'reset'
+@import 'bourbon'
+@import 'cask'
 
-header
-  margin: 0 auto
-  margin-top: 180px
-  div#main
-    width: 315px
-    padding: 100px 0 60px 30px
-    margin: 0 auto
-    background: url('/assets/circle.png') 30% -10px no-repeat
+$karla: 'Karla', sans-serif
+$duru: "Duru Sans", sans-serif
+$sans: arial, sans-serif
+$blue: #2f98dd
+$red: #a0511d
+$green: #229b2e
+$yellow: #dcde37
+$light_gray: #bdd1de
+
+*
+  color: $light_gray
 
 body
-  section
-    border: none
-    right: 50px
-    form
-      width: 200px
-      float: right
-      fieldset
-        margin: 0 auto
-        dt
-          margin: 15px 0 0 0
-        dd
-          margin: 5px
-          input[type=text], input[type=password]
-            width: 100%
-            padding: 5px 5px
-            border: solid 2px #000000
-            +border-radius(5px)
-            background: transparent
-        .actions
-          input[type="submit"]
-            margin: 10px  0 0 0
-            float: right
-            +button($green)
+  background: url('/assets/bg.jpg')
+
+#bomb
+  height: 362px
+  width: 338px
+  background: image-url('circle.png') no-repeat
+  position: absolute
+  margin: 0 auto
+  top: 50px
+  left: 50%
+  margin-left: -162px
+  z-index: 1
+
+body > header
+  width: 315px
+  margin: 130px auto 0 auto
+  text-align center
+  position: relative
+  top: 20px
+  z-index: 2
+  vertical-align: top
+  text-align: center
+  a
+    text-decoration: none
+  h1
+    padding: 15px 0 0 0
+    font: normal bold 48px $karla
+    span:nth-child(1)
+      color: $blue
+    span:nth-child(2)
+      color: $red
+    span:nth-child(3)
+      color: $green
+    span:nth-child(4)
+      color: $yellow
+
+  nav.social_links
+    text-align: center
+    a
+      height: 38px
+      width: 49px
+      display: inline-block
+      text-indent: -6969px
+      margin: 25px 15px
+      background: url('/assets/hover_sprite.png') no-repeat
+      &.hashrocket
+        background-position: 0 -50px
+        &:hover
+          background-position: -50px -50px
+      &.twitter
+        background-position: 0 0
+        margin-right: 20px
+        &:hover
+          background-position: -50px 0
+      &.github
+        background-position: 0 -100px
+        &:hover
+          background-position: -50px -100px
+  nav
+    a
+      font: normal bold 18px $sans
+      margin-right: 15px
+      padding-bottom: 6px
+      &:hover
+        color: $blue
+      &.active
+        border-bottom: solid $green 2px
+
+#admin
+  position: absolute
+  top: 10px
+  left: 20px
+  font: normal normal 14px $sans
+  z-index: 3
+

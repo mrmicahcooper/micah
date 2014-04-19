@@ -2,11 +2,15 @@
 %html
   %head
     %title mrmicahcooper
-    = stylesheet_link_tag 'application'
+    - if home_page?
+      = stylesheet_link_tag 'home'
+    - else
+      = stylesheet_link_tag 'application2'
     = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Karla:400,700|Duru+Sans'
     = javascript_include_tag 'application'
     = yield :stylesheet
     = csrf_meta_tag
+    %meta(name="viewport" content="width=device-width, initial-scale=1")
 
     :javascript
       var _gaq = _gaq || [];
@@ -21,29 +25,29 @@
       })();
 
   %body
-    %header
+    #admin
       - if signed_in?
-        .admin_actions
-          = link_to 'sign out', :sign_out
-          = link_to '+ add post', :new_blog
-      #main
-        %a{ href: root_path }
-          %h1<>
-            M
-            %span<> i
-            c
-            %span<> a
-            h Co
-            %span<> o
-            p
-            %span<> e
-            r
-        %nav.social_links
-          = link_to "Hashrocket", "http://hashrocket.com/people/micah-cooper", class: "hashrocket"
-          = link_to "Twitter", "http://twitter.com/mrmicahcooper", class: "twitter"
-          = link_to "Github", "http://github.com/mrmicahcooper", class: "github"
-        %nav
-          = active_link_to "Blog", :blog_home
-          = active_link_to "Photos", photos_path
-    %section
+        = link_to 'sign out', :sign_out
+        = link_to '+ add post', :new_blog
+    #bomb
+    %header#header
+      = link_to root_path do
+        %h1<>
+          M
+          %span<> i
+          c
+          %span<> a
+          h Co
+          %span<> o
+          p
+          %span<> e
+          r
+      %nav.social_links
+        = link_to "Hashrocket", "http://hashrocket.com/people/micah-cooper", class: "hashrocket"
+        = link_to "Twitter", "http://twitter.com/mrmicahcooper", class: "twitter"
+        = link_to "Github", "http://github.com/mrmicahcooper", class: "github"
+      %nav
+        = active_link_to "Blog", :blog_home
+        = active_link_to "Photos", photos_path
+    %section#content
       = yield

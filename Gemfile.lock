@@ -167,7 +167,6 @@ GEM
       sprockets (~> 2.8, <= 2.11.0)
       sprockets-rails (~> 2.0)
     slop (3.5.0)
-    spicerack-rails (0.0.3)
     sprockets (2.11.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -218,5 +217,4 @@ DEPENDENCIES
   redcarpet
   rspec-rails
   sass-rails
-  spicerack-rails
   uglifier

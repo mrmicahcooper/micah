@@ -15,8 +15,12 @@
   @media screen and (max-width: #{$width}px)
     @content
 
+= small_monitor
+  +max-width(1150)
+    @content
+
 = tablet
-  +max-width(768)
+  +max-width(700)
     @content
 
 = mobile

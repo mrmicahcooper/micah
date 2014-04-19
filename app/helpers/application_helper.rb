@@ -8,4 +8,8 @@ module ApplicationHelper
     "active" if /^#{path}/ =~ request.path
   end
 
+  def home_page?
+    request.path == root_path
+  end
+
 end
