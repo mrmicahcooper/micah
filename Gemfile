@@ -12,10 +12,9 @@ gem 'nokogiri'
 gem 'pg'
 gem 'picasa'
 gem 'puma'
-gem 'pygmentize'
 gem 'rails'
 gem 'rails_12factor', group: :production
-gem 'redcarpet'
+gem 'rdiscount'
 gem 'sass-rails'
 gem 'uglifier'
 

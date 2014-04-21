@@ -14,4 +14,12 @@
 //= require jquery_ujs
 //= require_tree .
 //= require dummy_image.pack.js
+//= require highlight.pack.js
 //= require common.js
+
+
+$(function(){
+
+  $('pre code, code').each(function(i, e) {hljs.highlightBlock(e)});
+
+})
