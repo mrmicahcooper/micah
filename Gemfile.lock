@@ -29,10 +29,11 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.3.6)
     arel (5.0.1.20140414130214)
-    authem (1.4.0)
-      activesupport
-      bcrypt-ruby
-    bcrypt-ruby (3.1.2)
+    authem (2.0.0.alpha.3)
+      activesupport (>= 4.0.4)
+      bcrypt (~> 3.1)
+      railties (~> 4.0)
+    bcrypt (3.1.7)
     bourbon (3.1.8)
       sass (>= 3.2.0)
       thor
@@ -193,7 +194,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  authem
+  authem (= 2.0.0.alpha.3)
   bourbon
   carrierwave
   cucumber-rails

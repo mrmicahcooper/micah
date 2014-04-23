@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.1.1'
 
-gem 'authem'
+gem 'authem', '2.0.0.alpha.3'
 gem 'bourbon'
 gem 'carrierwave'
 gem 'decent_exposure'
