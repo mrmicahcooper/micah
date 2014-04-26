@@ -1,5 +1,5 @@
 require 'active_record_helper'
-require 'models/post'
+require 'post'
 
 describe Post do
   it "requires a title" do

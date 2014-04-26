@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
 
-  include Authem::ControllerSupport
+  authem_for :admin
 
   protect_from_forgery
 

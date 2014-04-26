@@ -1,3 +1,4 @@
+@photos
 Feature: Photos
   Scenario: User views photos
     Given I am on the home page
