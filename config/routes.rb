@@ -1,7 +1,6 @@
 Micah::Application.routes.draw do
   root to: 'pages#home'
 
-
   resources :posts
   resources :blog, controller: :posts
 
@@ -9,7 +8,6 @@ Micah::Application.routes.draw do
   post '/sign_in', to: 'sessions#create', as: :create_session
 
   get '/sign_out', to: 'sessions#destroy', as: :sign_out
-  get '/photos', to: 'photos#index', as: :photos
 
   get 'ui(/:action)', controller: 'ui'
 

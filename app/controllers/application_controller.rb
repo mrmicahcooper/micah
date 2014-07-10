@@ -8,4 +8,10 @@ class ApplicationController < ActionController::Base
     strategy DecentExposure::StrongParametersStrategy
   end
 
+  private
+
+  def deny_admin_access
+    redirect_to :sign_in unless admin_signed_in?
+  end
+
 end
