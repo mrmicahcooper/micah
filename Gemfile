@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-ruby '2.1.1'
+ruby '2.1.2'
 
-gem 'authem', '2.0.0.alpha.3'
+gem 'authem'
 gem 'bourbon'
 gem 'carrierwave'
 gem 'decent_exposure'
