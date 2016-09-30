@@ -5,7 +5,7 @@ Feature: Posts
       | body      | This is the body of a post. You bette read it |
       | published | true                                          |
     When I am on the home page
-    And I follow "Blog"
+    And I go to the blog page
     Then I should see "This is the body of a post. You bette read it"
 
   Scenario: Visitor views post
@@ -14,7 +14,7 @@ Feature: Posts
       | published | true                                          |
       | title     | First Post                                    |
     When I am on the home page
-    And I follow "Blog"
+    And I go to the blog page
     And I follow "First Post"
     Then I should be on the first post page
 
@@ -23,7 +23,7 @@ Feature: Posts
       | body      | This is the body of a post. You bette read it |
       | published | true                                          |
     And I am signed in
-    And I follow "Blog"
+    And I go to the blog page
     And I follow "edit"
     And I fill in "post_body" with "this is the edited post"
     And I press "Update Post"
@@ -37,7 +37,7 @@ Feature: Posts
       | body      | This is the body of a post. You bette read it |
       | published | false                                         |
     When I am on the home page
-    And I follow "Blog"
+    And I go to the blog page
     Then I should not see "This is the body of a post. You bette read it"
 
   Scenario: Admin adds post
